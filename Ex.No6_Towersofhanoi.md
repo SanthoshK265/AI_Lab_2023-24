@@ -1,5 +1,5 @@
-# Ex.No: 6   Towers of Hanoi _ Prolog  
-### DATE:  23/09/2024
+# Ex.No: 6   Logic Programming – Towers of Hanoi
+### DATE:    09/09/24                                                                    
 ### REGISTER NUMBER : 212222060222
 ### AIM: 
 To  write  a logic program  to solve Towers of Hanoi problem  using SWI-PROLOG. 
@@ -14,22 +14,25 @@ To  write  a logic program  to solve Towers of Hanoi problem  using SWI-PROLOG.
 8. Run the program  to find answer of  query.
 
 ### Program:
+
 ```
-move(1,X,Y,_) :-  
-    write('Move top disk from '), 
-    write(X), 
-    write(' to '), 
-    write(Y), 
-    nl. 
-move(N,X,Y,Z) :- 
-    N>1, 
-    M is N-1, 
-    move(M,X,Z,Y), 
-    move(1,X,Y,_), 
-    move(M,Z,Y,X).
+move(1,X,Y,_) :-
+ write('Move top disk from '),
+ write(X),
+ write(' to '),
+ write(Y),
+ nl.
+move(N,X,Y,Z) :-
+ N>1,
+ M is N-1,
+ move(M,X,Z,Y),
+ move(1,X,Y,_),
+ move(M,Z,Y,X).
 ```
+
 ### Output:
-![](Towersofhanoi.png)
+
+![image](https://github.com/user-attachments/assets/8df8fe36-8b61-4641-a88a-9e238529d7f4)
 
 
 ### Result:
